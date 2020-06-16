@@ -7,7 +7,7 @@ public class Circle {
     private String name;
     private int myNumber;
     
-    private static int number = 2000;
+    private static int number = 1;
     
     public Circle() {
         radius = 0;
@@ -47,8 +47,14 @@ public class Circle {
     public void setRadius(int newRadius) {
         radius = newRadius;
     }
+
+    public int getNumber() {
+        return myNumber;
+    }
     
-    
+    public double diameter() {
+        return 2 * radius;
+    }
     
     public double area() {
         return Math.PI * radius * radius;
