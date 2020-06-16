@@ -1,78 +1,38 @@
-package ShapeManager;
 public class Rectangle {
     
-    //private String version = "v1.3.0";
-    int length;
-    int width;
-    private String name;
-    private int myNumber;
+    static final double VERSION = 1.1;
     
-    private static int number = 1;
+    // INSTANCE VARIABLES
+    double length;
+    double width;
+    
+    // CONSTUCTORS
+    public Rectangle (double l, double w) {
+        length = l;
+        width = w;
+    }
+    
+    public Rectangle (double s) {
+        length = s;
+        width = s;
+    }
     
     public Rectangle () {
-        length = 0;
-        width = 0;
-        name = "";
-        myNumber = number;
-        number++;
+        length = 10;
+        width = 5;
     }
     
-    public Rectangle (int l, int w) {
-        length = l;
-        width = w;
-        name = "";
-        myNumber = number;
-        number++;        
+    // METHODS
+    public static double getVersion() {
+        return VERSION;
     }
     
-    public Rectangle (int l, int w, String n) {
-        length = l;
-        width = w;
-        name = n;
-        myNumber = number;
-        number++;
-    }
-    
-    // Accessor or a Getter
-    public String getName() {
-        return name;
-    }
-    
-    public int getLength() {
-        return length;
+    public void computeArea() {
+        System.out.println("\tThe area is:" + (length * width));
     }
 
-    public int getWidth() {
-        return width;
-    }
-    
-    // Mutator or a Setter
-    public void setName(String newName) {
-        name = newName;
-    }
-    
-    public void setLength(int newLength) {
-        length = newLength;
-    }
-    
-    public void setWidth(int newWidth) {
-        width = newWidth;
-    }
-    
-    public int area() {
-        return length * width;
-    }
-    
-    public int perimeter() {
-        return 2 * (length + width);
-    }
-
-    public int getNumber() {
-        return myNumber;
-    }
-    
-    public String toString() {
-        return "\nThe area is " + area() + " and the name of the Rectangle  #" + myNumber + " is " + getName();
-    }
+    public void computePerimeter() {
+        System.out.println("\tThe perimeter is: " + ((length + width)*2));
+    }    
     
 }
