@@ -104,6 +104,7 @@ public class ShapeManager {
             }
         
         System.out.println("-------------------------------");
+        System.out.println();
         
     }
     

@@ -1,7 +1,7 @@
 package ShapeManager;
 public class Rectangle {
     
-    private String version = "v1.3.0";
+    //private String version = "v1.3.0";
     int length;
     int width;
     private String name;

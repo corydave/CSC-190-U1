@@ -1,7 +1,7 @@
 package ShapeManager;
 public class Circle {
     
-    private String version = "v1.3.0";
+    //private String version = "v1.3.0";
     
     private int radius;
     private String name;
