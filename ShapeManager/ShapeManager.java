@@ -1,10 +1,10 @@
-package ShapeManager;
 // NAME: Brian Coe
 // DATE: 06/11/2020
 // PROGRAM DESCRIPTION: Java program to return details of a circle or Rectangle based on the user input.
 
 // Skeleton code provided by Dave Ghidiu - FLCC
 
+package ShapeManager;
 import java.util.Scanner;
 import java.util.ArrayList;
 
