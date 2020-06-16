@@ -1,71 +1,61 @@
-package ShapeManager;
 public class Circle {
     
-    //private String version = "v1.3.0";
+    final double VERSION = 1.1;
     
-    private int radius;
-    private String name;
-    private int myNumber;
+    // INSTANCE VARIABLES
+    double radius;
     
-    private static int number = 1;
+    // CONSTRUCTORS
+    // Constructor that takes in a double
+    public Circle(double r) {
+        radius = r;
+        System.out.println("You created a circle with radius of " + radius);        
+    }
     
+    // Default constructor
     public Circle() {
-        radius = 0;
-        name = "";
-        myNumber = number;
-        number++;
+        radius = 1.0;
     }
     
-    public Circle(int r) {
-        radius = r;
-        name = "";
-        myNumber = number;
-        number++;        
+    // METHODS
+    public double getVersion() {
+        return VERSION;
     }
     
-    public Circle(int r, String n) {
-        radius = r;
-        name = n;
-        myNumber = number;
-        number++;
+    public void computeArea() {
+        // System.out.println("Computing the area of a circle:");
+        // System.out.println("PLEASE STAND BY!");
+        // System.out.println();
+        System.out.println("\tThe area is: " + (Math.PI * Math.pow(radius, 2)));                
     }
     
-    // Accessor or a Getter
-    public String getName() {
-        return name;
-    }
-    
-    public int getRadius() {
-        return radius;
-    }
-    
-    // Mutator or a Setter
-    public void setName(String newName) {
-        name = newName;
-    }
-    
-    public void setRadius(int newRadius) {
-        radius = newRadius;
+    public void computeCircumference() {
+        // System.out.println("Computing the circumference of a circle:");
+        // System.out.println("PLEASE STAND BY!");
+        // System.out.println();
+        System.out.println("\tThe circumference is: " + (Math.PI * radius * 2));        
     }
 
-    public int getNumber() {
-        return myNumber;
-    }
-    
-    public double diameter() {
-        return 2 * radius;
-    }
-    
-    public double area() {
-        return Math.PI * radius * radius;
-    }
-    
-    public double circumference() {
-        return 2 * Math.PI * radius;
-    }
-    
-    public String toString() {
-        return "\nThe area is " + area() + " and the name of the circle #" + myNumber + " is " + getName();
-    }
+    public void computeDiameter() {
+        // System.out.println("Computing the diameter of a circle:");
+        // System.out.println("PLEASE STAND BY!");
+        // System.out.println();
+        System.out.println("\tThe diameter is: " + (2 * radius));
+    }    
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
